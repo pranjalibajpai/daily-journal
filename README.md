@@ -23,4 +23,7 @@ A web application to update your daily activities built with EJS templates havin
 - Posts ![posts](https://github.com/pranjalibajpai/daily-journal/blob/master/preview/home2.png)
 - Full Post (Click On Read More) ![posts](https://github.com/pranjalibajpai/daily-journal/blob/master/preview/post1.png)
 
+# Deployment
+- Coming Soon!
+
 
