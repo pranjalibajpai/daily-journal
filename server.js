@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const app = express();
+const _ = require("lodash");
 
 //port setup
 const port = 3000 || process.env.PORT;
@@ -38,6 +39,16 @@ app.get("/contact", function (request, response) {
 
 app.get("/compose", function (request, response) {
   response.render("compose");
+});
+
+//Route Parameters
+app.get("/posts/:postName", function(request, response){
+  let post_name = request.params.postName;
+  posts.forEach(function(post){
+    if(_.lowerCase(post.title) === _.lowerCase(post_name)){
+      response.render("post", {postTitle: post.title, postContent: post.content});
+    }
+  });
 });
 
 //POST requests

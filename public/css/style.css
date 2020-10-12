@@ -10,7 +10,12 @@
 
 .outer {
   padding: 1%;
-  margin: 5% 2%;
+  margin: 5% 2% 5% 1%;
+}
+
+.outer-box {
+  padding: 1%;
+  margin-top: 2%;
 }
 .image {
   width: 100%;
